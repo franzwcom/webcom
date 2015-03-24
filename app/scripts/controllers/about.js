@@ -2,12 +2,12 @@
 
 /**
  * @ngdoc function
- * @name webcomApp.controller:AboutCtrl
+ * @name testyoangularApp.controller:AboutCtrl
  * @description
  * # AboutCtrl
- * Controller of the webcomApp
+ * Controller of the testyoangularApp
  */
-angular.module('webcomApp')
+angular.module('testyoangularApp')
   .controller('AboutCtrl', function ($scope) {
     $scope.awesomeThings = [
       'HTML5 Boilerplate',

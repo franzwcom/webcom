@@ -2,14 +2,14 @@
 
 /**
  * @ngdoc overview
- * @name webcomApp
+ * @name testyoangularApp
  * @description
- * # webcomApp
+ * # testyoangularApp
  *
  * Main module of the application.
  */
 angular
-  .module('webcomApp', [
+  .module('testyoangularApp', [
     'ngAnimate',
     'ngCookies',
     'ngResource',
@@ -27,7 +27,12 @@ angular
         templateUrl: 'views/about.html',
         controller: 'AboutCtrl'
       })
+      .when('/contact', {
+        templateUrl: 'views/contact.html',
+        controller: 'ContactCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });
   });
+
