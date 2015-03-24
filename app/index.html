@@ -34,44 +34,38 @@
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-    <!-- Add your site or application content here -->
-    <div class="header">
-      <div class="navbar navbar-default" role="navigation">
-        <div class="container">
-          <div class="navbar-header">
+<div class="container main-container">
 
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#js-navbar-collapse">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
+   <!-- banner -->
+    <ng-include src=" 'views/banner.html'"></ng-include>
 
-            <a class="navbar-brand" href="#/">Test Env</a>
-          </div>
 
-          <div class="collapse navbar-collapse" id="js-navbar-collapse">
+    <!-- menu bar -->
+    <ng-include src=" 'views/navbar.html'"></ng-include>
 
-            <ul class="nav navbar-nav">
-              <li class="active"><a href="#/">Home</a></li>
-              <li><a ng-href="#/about">About</a></li>
-              <li><a ng-href="#/contact">Contact</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
+    <!-- front-banner -->
+    <ng-include src=" 'views/front-banner.html'"></ng-include>
+
+
 
     <div class="container">
-    <div ng-view=""></div>
+        <div ng-view></div>
     </div>
 
-    <div class="footer">
-      <div class="container">
-        <p><span class="glyphicon glyphicon-heart"></span> works </p>
-      </div>
-    </div>
 
+   
+
+  <!-- footer -->
+    <ng-include src=" 'views/footer.html'"></ng-include>
+
+
+
+
+
+</div> <!-- end main container -->
+
+
+    
 
     <!-- bower: scripts/vendors -->
     <script src="../bower_components/jquery/dist/jquery.js"></script>
